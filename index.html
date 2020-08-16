@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Video Player</title>
+
+    <link rel="stylesheet" href="assets/css/plyr.css" />
+
+    <link rel="stylesheet" href="assets/css/dist/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="video_box">
+        <h1>Custom Video Player</h1>
+        <video
+          id="player"
+          playsinline
+          controls
+          data-poster="/path/to/poster.jpg"
+        >
+          <source
+            src="https://dl.radionavaz.pw/Video/1398/11/27/Shahram%20Shabpareh%20-%20Khatoon%20-%20HD%20720.mp4"
+            type="video/mp4"
+          />
+          <source src="" type="video/webm" />
+
+          <!-- Captions are optional -->
+          <track
+            kind="captions"
+            label="English captions"
+            src="/path/to/captions.vtt"
+            srclang="en"
+            default
+          />
+        </video>
+      </div>
+    </div>
+
+    <script src="assets/js/plyr.js"></script>
+    <script>
+      const player = new Plyr('#player', {
+        i18n: {
+          rewind: 'Rewind 10 secs',
+        },
+        controls: [
+          'play-large',
+          'play',
+          'volume',
+          'current-time',
+          'progress',
+
+          'duration',
+          'mute',
+          'captions',
+          'fullscreen',
+        ],
+      });
+
+      (() => {
+        const list = document.querySelector('.plyr');
+        list.appendChild(list.firstElementChild);
+      })();
+    </script>
+  </body>
+</html>

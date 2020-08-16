@@ -32,6 +32,7 @@ h5 {
   width: 1024px;
   border-radius: 0.7rem;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  border-top: 1rem solid #fdcc5c;
 }
 
 .plyr__controls {
@@ -64,4 +65,17 @@ h5 {
 
 .plyr__controls__item.plyr__control[data-plyr='play']:hover {
   color: #fff;
+}
+
+.plyr__control--overlaid {
+  background: none;
+}
+
+.plyr__control--overlaid svg {
+  fill: #fdcc5c;
+  transform: scale(5);
+}
+
+.plyr__control--overlaid:hover {
+  background: transparent !important;
 }

@@ -40,3 +40,18 @@ h1 {
 .plyr--full-ui input[type='range'] {
   color: #fdcc5c;
 }
+
+.plyr--video .plyr__control.plyr__tab-focus,
+.plyr--video .plyr__control:hover,
+.plyr--video .plyr__control[aria-expanded='true'] {
+  background: #fdcc5c;
+  background: var(--plyr-video-control-background-hover, var(--plyr-color-main, var(--plyr-color-main, #fdcc5c)));
+}
+
+.plyr__controls__item.plyr__control[data-plyr='play'] {
+  color: #fdcc5c;
+}
+
+.plyr__controls__item.plyr__control[data-plyr='play']:hover {
+  color: #fff;
+}

@@ -12,7 +12,6 @@
   <body>
     <div class="container">
       <div id="video_box">
-        <h1>Custom Video Player</h1>
         <video
           id="player"
           playsinline
@@ -41,7 +40,14 @@
     <script>
       const player = new Plyr('#player', {
         i18n: {
-          rewind: 'Rewind 10 secs',
+          play: 'پخش',
+          enterFullscreen: 'تمام صفحه',
+          exitFullscreen: 'خروج از تمام صفحه',
+          settings: 'تنظیمات',
+          speed: 'سرعت پخش',
+          normal: 'عادی',
+          enableCaptions: 'فعال‌کردن زیرنویس',
+          disableCaptions: 'غیرفعال‌کردن زیرنویس',
         },
         controls: [
           'play-large',
@@ -50,13 +56,19 @@
           'current-time',
           'progress',
           'duration',
-          'mute',
           'captions',
           'settings',
+          'fastForward',
+          'rewind',
           'fullscreen',
         ],
+        seekTime: 10,
         hideControls: false,
         settings: ['speed'],
+        tooltips: {
+          controls: true,
+          seek: true,
+        },
       });
 
       (() => {

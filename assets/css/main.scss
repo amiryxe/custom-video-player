@@ -44,3 +44,21 @@ h1 {
 .plyr--full-ui input[type='range'] {
   color: $second_color;
 }
+
+.plyr--video .plyr__control.plyr__tab-focus,
+.plyr--video .plyr__control:hover,
+.plyr--video .plyr__control[aria-expanded='true'] {
+  background: $second_color;
+  background: var(
+    --plyr-video-control-background-hover,
+    var(--plyr-color-main, var(--plyr-color-main, $second_color))
+  );
+}
+
+.plyr__controls__item.plyr__control[data-plyr='play'] {
+  color: $second_color;
+}
+
+.plyr__controls__item.plyr__control[data-plyr='play']:hover {
+  color: #fff;
+}

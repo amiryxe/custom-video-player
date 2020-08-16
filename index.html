@@ -16,22 +16,9 @@
           id="player"
           playsinline
           controls
-          data-poster="/path/to/poster.jpg"
+          data-poster="assets/video/cat-cover.PNG"
         >
-          <source
-            src="https://dl.radionavaz.pw/Video/1398/11/27/Shahram%20Shabpareh%20-%20Khatoon%20-%20HD%20720.mp4"
-            type="video/mp4"
-          />
-          <source src="" type="video/webm" />
-
-          <!-- Captions are optional -->
-          <track
-            kind="captions"
-            label="English captions"
-            src="/path/to/captions.vtt"
-            srclang="en"
-            default
-          />
+          <source src="assets/video/cat.mp4" type="video/mp4" />
         </video>
       </div>
     </div>
@@ -39,6 +26,7 @@
     <script src="assets/js/plyr.js"></script>
     <script>
       const player = new Plyr('#player', {
+        ratio: '16:9',
         controls: [
           'play-large',
           'play',
@@ -54,6 +42,7 @@
         ],
         i18n: {
           play: 'پخش',
+          pause: 'توقف',
           enterFullscreen: 'تمام صفحه',
           exitFullscreen: 'خروج از تمام صفحه',
           settings: 'تنظیمات',
@@ -64,6 +53,7 @@
           rewind: '10 ثانیه به عقب‌',
           fastForward: '10 ثانیه به جلو',
         },
+
         seekTime: 10,
         hideControls: false,
         settings: ['speed'],

@@ -39,6 +39,19 @@
     <script src="assets/js/plyr.js"></script>
     <script>
       const player = new Plyr('#player', {
+        controls: [
+          'play-large',
+          'play',
+          'volume',
+          'current-time',
+          'progress',
+          'duration',
+          'rewind',
+          'fast-forward',
+          'captions',
+          'settings',
+          'fullscreen',
+        ],
         i18n: {
           play: 'پخش',
           enterFullscreen: 'تمام صفحه',
@@ -48,20 +61,9 @@
           normal: 'عادی',
           enableCaptions: 'فعال‌کردن زیرنویس',
           disableCaptions: 'غیرفعال‌کردن زیرنویس',
+          rewind: '10 ثانیه به عقب‌',
+          fastForward: '10 ثانیه به جلو',
         },
-        controls: [
-          'play-large',
-          'play',
-          'volume',
-          'current-time',
-          'progress',
-          'duration',
-          'captions',
-          'settings',
-          'fastForward',
-          'rewind',
-          'fullscreen',
-        ],
         seekTime: 10,
         hideControls: false,
         settings: ['speed'],

@@ -50,6 +50,10 @@ h5 {
 }
 
 @media only screen and (max-width: 1024px) {
+  body {
+    padding: 1rem;
+  }
+
   .plyr {
     width: 100%;
   }

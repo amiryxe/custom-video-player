@@ -131,7 +131,9 @@ h5 {
   margin-top: 2px;
 }
 
-.plyr--full-ui input[type='range']::-webkit-slider-runnable-track {
+.plyr--full-ui
+.plyr__volume
+input[type='range']::-webkit-slider-runnable-track {
   height: 15px !important;
   height: var(--plyr-range-track-height, 15px) !important;
 }

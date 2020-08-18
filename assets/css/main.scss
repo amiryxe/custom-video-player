@@ -113,6 +113,10 @@ h5 {
   color: #fff;
 }
 
+.plyr__tooltip::before {
+  border-top-color: $dark_color;
+}
+
 .plyr__progress__buffer {
   display: none !important;
 }

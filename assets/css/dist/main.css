@@ -104,6 +104,10 @@ h5 {
   color: #fff;
 }
 
+.plyr__tooltip::before {
+  border-top-color: #202d3a;
+}
+
 .plyr__progress__buffer {
   display: none !important;
 }

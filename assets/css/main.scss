@@ -105,9 +105,10 @@ h5 {
 
 .plyr__controls__item.plyr__volume {
   transform: rotate(-90deg);
-  margin-top: -150px;
+  margin-top: -130px;
   position: absolute;
   left: 0;
+  padding-left: 10px;
 
   .plyr--full-ui input[type='range'] {
     color: red;

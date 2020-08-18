@@ -86,21 +86,33 @@
       document.querySelector('.plyr__controls__item.plyr__volume').style =
         'display: none';
 
-      let isOpen = false;
-      volumeBtn.addEventListener('click', () => {
-        if (isOpen) {
-          document.querySelector('.plyr__controls__item.plyr__volume').style =
-            'display: none';
-          isOpen = false;
-        } else {
-          document.querySelector('.plyr__controls__item.plyr__volume').style =
-            'display: block';
-          isOpen = true;
-        }
+      // open and close volume control
+      volumeBtn.addEventListener('mouseover', () => {
+        document.querySelector('.plyr__controls__item.plyr__volume').style =
+          'display: block';
       });
 
+      volumeBtn.addEventListener('mouseout', () => {
+        document.querySelector('.plyr__controls__item.plyr__volume').style =
+          'display: none';
+      });
+
+      document
+        .querySelector('.plyr__controls__item.plyr__volume')
+        .addEventListener('mouseover', () => {
+          document.querySelector('.plyr__controls__item.plyr__volume').style =
+            'display: block';
+        });
+
+      document
+        .querySelector('.plyr__controls__item.plyr__volume')
+        .addEventListener('mouseout', () => {
+          document.querySelector('.plyr__controls__item.plyr__volume').style =
+            'display: none';
+        });
+
       document.querySelector('input[data-plyr=volume]').style =
-        'background: rgb(32, 45, 58); padding: 15px !important; border-radius: 5px;';
+        'background: rgb(32, 45, 58); padding: 15px !important; border-radius: 5px; width: 150px;';
 
       document
         .querySelector('.plyr__controls__item.plyr__control')

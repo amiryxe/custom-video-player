@@ -12,10 +12,10 @@ volumeBtn.addEventListener('mouseover', () => {
     'display: block';
 });
 
-// volumeBtn.addEventListener('mouseout', () => {
-//   document.querySelector('.plyr__controls__item.plyr__volume').style =
-//     'display: none';
-// });
+volumeBtn.addEventListener('mouseout', () => {
+  document.querySelector('.plyr__controls__item.plyr__volume').style =
+    'display: none';
+});
 
 document
   .querySelector('.plyr__controls__item.plyr__volume')
@@ -24,12 +24,12 @@ document
       'display: block';
   });
 
-// document
-//   .querySelector('.plyr__controls__item.plyr__volume')
-//   .addEventListener('mouseout', () => {
-//     document.querySelector('.plyr__controls__item.plyr__volume').style =
-//       'display: none';
-//   });
+document
+  .querySelector('.plyr__controls__item.plyr__volume')
+  .addEventListener('mouseout', () => {
+    document.querySelector('.plyr__controls__item.plyr__volume').style =
+      'display: none';
+  });
 
 // force styles
 document.querySelector('input[data-plyr=volume]').style =

@@ -118,6 +118,7 @@ h5 {
 .plyr__tooltip {
   background: $dark_color;
   color: #fff;
+  direction: rtl;
 }
 
 .plyr__tooltip::before {
@@ -155,4 +156,8 @@ h5 {
   margin-right: -15px;
   right: 100%;
   top: 40%;
+}
+
+.plyr__menu .plyr__control[aria-expanded='true'] svg {
+  transform: none !important;
 }

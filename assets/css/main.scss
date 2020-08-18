@@ -127,3 +127,32 @@ h5 {
 .plyr__progress__buffer {
   display: none !important;
 }
+
+.plyr--full-ui input[type='range']::-webkit-slider-thumb {
+  background: transparent;
+  box-shadow: none;
+  margin-top: 2px;
+}
+
+.plyr--full-ui input[type='range']::-webkit-slider-runnable-track {
+  height: 15px !important;
+  height: var(--plyr-range-track-height, 15px) !important;
+}
+
+.plyr__controls__item.plyr__volume::before {
+  content: '';
+  border-bottom: 4px solid transparent;
+  border-bottom: var(--plyr-tooltip-arrow-size, 4px) solid transparent;
+  border-top: 4px solid transparent;
+  border-top: var(--plyr-tooltip-arrow-size, 4px) solid transparent;
+  border-right: 4px solid $dark_color;
+  border-right: var(--plyr-tooltip-arrow-size, 4px) solid
+    var(--plyr-tooltip-background, $dark_color !important);
+  height: 0;
+  position: absolute;
+  width: 0;
+  z-index: 2;
+  margin-right: -15px;
+  right: 100%;
+  top: 40%;
+}

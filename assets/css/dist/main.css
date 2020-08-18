@@ -1,6 +1,6 @@
 @font-face {
   font-family: Vazir;
-  src: url("Vazir.woff2") format("woff2"), url("Vazir.woff") format("woff"), url("Vazir.ttf") format("truetype");
+  src: url("/assets/fonts/Vazir.woff2") format("woff2"), url("/assets/fonts/Vazir.woff") format("woff"), url("/assets/fonts/Vazir.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -96,7 +96,6 @@ h5 {
 .plyr__controls__item.plyr__volume {
   transform: rotate(-90deg);
   margin-top: -100px;
-  width: 20px !important;
 }
 
 .plyr__tooltip {

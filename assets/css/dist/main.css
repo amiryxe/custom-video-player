@@ -1,3 +1,10 @@
+@font-face {
+  font-family: Vazir;
+  src: url("Vazir.woff2") format("woff2"), url("Vazir.woff") format("woff"), url("Vazir.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
   height: 100%;
@@ -5,7 +12,7 @@ body {
 
 body {
   background: #eee;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: Vazir, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 h1 {
@@ -69,13 +76,34 @@ h5 {
 
 .plyr__control--overlaid {
   background: none;
-}
-
-.plyr__control--overlaid svg {
-  fill: #fdcc5c;
+  margin-top: -30px;
+  margin-left: -30px;
   transform: scale(5);
 }
 
 .plyr__control--overlaid:hover {
+  transform: scale(6) !important;
+}
+
+.plyr__control--overlaid svg {
+  fill: #fdcc5c;
+}
+
+.plyr__control--overlaid:hover {
   background: transparent !important;
+}
+
+.plyr__controls__item.plyr__volume {
+  transform: rotate(-90deg);
+  margin-top: -100px;
+  width: 20px !important;
+}
+
+.plyr__tooltip {
+  background: #202d3a;
+  color: #fff;
+}
+
+.plyr__progress__buffer {
+  display: none !important;
 }

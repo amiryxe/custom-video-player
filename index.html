@@ -83,11 +83,28 @@
       volumeBtn.innerHTML =
         '<button type="button" class="plyr__control" data-plyr="mute"><svg class="icon--pressed" aria-hidden="true" focusable="false"><use xlink:href="#plyr-muted"></use></svg><svg class="icon--not-pressed" aria-hidden="true" focusable="false"><use xlink:href="#plyr-volume"></use></svg></button>';
 
+      document.querySelector('.plyr__controls__item.plyr__volume').style =
+        'display: none';
+
+      let isOpen = false;
+      volumeBtn.addEventListener('click', () => {
+        if (isOpen) {
+          document.querySelector('.plyr__controls__item.plyr__volume').style =
+            'display: none';
+          isOpen = false;
+        } else {
+          document.querySelector('.plyr__controls__item.plyr__volume').style =
+            'display: block';
+          isOpen = true;
+        }
+      });
+
+      document.querySelector('input[data-plyr=volume]').style =
+        'background: rgb(32, 45, 58); padding: 15px !important; border-radius: 5px;';
+
       document
         .querySelector('.plyr__controls__item.plyr__control')
         .after(volumeBtn);
-
-      document.querySelector('.plyr__controls__item.plyr__volume').remove();
 
       document.querySelector(
         '.plyr__controls__item.plyr__control[data-plyr="fast-forward"] svg'

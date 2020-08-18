@@ -52,7 +52,7 @@ h5 {
 .plyr--full-ui input[type='range'] {
   background: rgba(255, 255, 255, 0.3);
   padding: 3px 10px !important;
-  height: 10px;
+  height: 11px;
 }
 
 .plyr--full-ui input[type='range'] {
@@ -95,7 +95,13 @@ h5 {
 
 .plyr__controls__item.plyr__volume {
   transform: rotate(-90deg);
-  margin-top: -100px;
+  margin-top: -150px;
+  position: absolute;
+  left: 0;
+}
+
+.plyr__controls__item.plyr__volume .plyr--full-ui input[type='range'] {
+  color: red;
 }
 
 .plyr__tooltip {

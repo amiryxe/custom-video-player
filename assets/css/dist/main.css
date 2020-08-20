@@ -1,7 +1,7 @@
 @font-face {
   font-family: Vazir;
-  src: url("custom-video-player/assets/fonts/Vazir.eot");
-  src: url("custom-video-player/assets/fonts/Vazir.eot") format("embedded-opentype"), url("custom-video-player/assets/fonts/Vazir.woff2") format("woff2"), url("custom-video-player/assets/fonts/Vazir.woff") format("woff"), url("custom-video-player/assets/fonts/Vazir.ttf") format("truetype");
+  src: url("/custom-video-player/assets/fonts/Vazir.eot");
+  src: url("/custom-video-player/assets/fonts/Vazir.eot") format("embedded-opentype"), url("/custom-video-player/assets/fonts/Vazir.woff2") format("woff2"), url("/custom-video-player/assets/fonts/Vazir.woff") format("woff"), url("/custom-video-player/assets/fonts/Vazir.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }

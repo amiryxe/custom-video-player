@@ -11,4 +11,4 @@
 
 ## Demo
 
-[Show Demo](https://amirsaa.github.io/custom-video-player/)
+[Show Demo](https://amiryxe.github.io/custom-video-player/)

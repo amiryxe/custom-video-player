@@ -1,42 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Custom Video Player</title>
 
-    <link rel="stylesheet" href="assets/css/plyr.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Video Player</title>
 
-    <link rel="stylesheet" href="assets/css/dist/main.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div id="video_box">
-        <video
-          id="player"
-          playsinline
-          controls
-          data-poster="assets/video/cat-cover.PNG"
-        >
-          <source src="assets/video/cat.mp4" type="video/mp4" />
+  <link rel="stylesheet" href="assets/css/plyr.css" />
 
-          <!-- Captions are optional -->
-          <track
-            kind="captions"
-            label="English captions"
-            src="/path/to/captions.vtt"
-            srclang="en"
-            default
-          />
-        </video>
-        <h1>Custom Video Player</h1>
-        <h5>by Amir Salehi // [HTML5, JS, Sass, plyr]</h5>
-      </div>
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div id="video_box">
+      <video id="player" playsinline controls data-poster="assets/video/cat-cover.PNG">
+        <source src="assets/video/cat.mp4" type="video/mp4" />
+
+        <!-- Captions are optional -->
+        <track kind="captions" label="English captions" src="/path/to/captions.vtt" srclang="en" default />
+      </video>
+      <h1>Custom Video Player</h1>
+      <h5>by Amir Salehi // [HTML5, JS, Sass, plyr]</h5>
     </div>
+  </div>
 
-    <script src="assets/js/plyr.js"></script>
-    <script src="assets/js/plyr-config.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/icons.js"></script>
-  </body>
+  <script src="assets/js/plyr.js"></script>
+  <script src="assets/js/plyr-config.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/icons.js"></script>
+</body>
+
 </html>

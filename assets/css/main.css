@@ -36,8 +36,11 @@ h5 {
   align-items: center;
 }
 
-.plyr {
+.wrapper {
   width: 1024px;
+}
+
+.plyr {
   border-radius: 0.7rem;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
   border-top: 1rem solid #fdcc5c;

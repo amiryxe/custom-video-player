@@ -45,25 +45,26 @@ document
   )
   .forEach((item) => {
     let volumeBtn = document.createElement("span");
+    volumeBtn.classList.add("volume-control-button");
     volumeBtn.innerHTML =
       '<button type="button" class="plyr__control" data-plyr="mute"><svg class="icon--pressed" aria-hidden="true" focusable="false"><use xlink:href="#plyr-muted"></use></svg><svg class="icon--not-pressed" aria-hidden="true" focusable="false"><use xlink:href="#plyr-volume"></use></svg></button>';
 
     item.after(volumeBtn);
-
-    // open and close volume control
-    volumeBtn.addEventListener("mouseover", (e) => {
-      document
-        .querySelectorAll(".plyr__controls__item.plyr__volume")
-        .forEach((item) => {
-          item.style = "display: block";
-        });
-    });
-
-    volumeBtn.addEventListener("mouseout", (e) => {
-      document
-        .querySelectorAll(".plyr__controls__item.plyr__volume")
-        .forEach((item) => {
-          item.style = "display: none";
-        });
-    });
   });
+
+// open and close volume control
+document.querySelectorAll(".volume-control-button").forEach((item1) => {
+  item1.addEventListener("mouseover", (e) => {
+    e.target.parentNode.parentNode.querySelector(
+      ".plyr__controls__item.plyr__volume"
+    ).style = "display: block";
+  });
+});
+
+document.querySelectorAll(".volume-control-button").forEach((item1) => {
+  item1.addEventListener("mouseout", (e) => {
+    e.target.parentNode.parentNode.querySelector(
+      ".plyr__controls__item.plyr__volume"
+    ).style = "display: none";
+  });
+});

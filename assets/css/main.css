@@ -55,7 +55,6 @@ h5 {
   }
 }
 .plyr__controls {
-  position: static !important;
   padding-top: 10px !important;
   width: 100%;
   background: #a5134e !important;

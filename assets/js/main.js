@@ -5,30 +5,6 @@ document
     item.style = "display: none";
   });
 
-document
-  .querySelectorAll(".plyr__controls__item.plyr__volume")
-  .forEach((item) => {
-    item.addEventListener("mouseover", () => {
-      document
-        .querySelectorAll(".plyr__controls__item.plyr__volume")
-        .forEach((item) => {
-          item.style = "display: none";
-        });
-    });
-  });
-
-document
-  .querySelectorAll(".plyr__controls__item.plyr__volume")
-  .forEach((item) => {
-    item.addEventListener("mouseout", () => {
-      document
-        .querySelectorAll(".plyr__controls__item.plyr__volume")
-        .forEach((item) => {
-          item.style = "display: none";
-        });
-    });
-  });
-
 // force styles
 document.querySelectorAll("input[data-plyr=volume]").style =
   "background: rgb(32, 45, 58); padding: 15px !important; border-radius: 5px; width: 150px;";
@@ -59,12 +35,26 @@ document.querySelectorAll(".volume-control-button").forEach((item1) => {
       ".plyr__controls__item.plyr__volume"
     ).style = "display: block";
   });
-});
 
-document.querySelectorAll(".volume-control-button").forEach((item1) => {
   item1.addEventListener("mouseout", (e) => {
     e.target.parentNode.parentNode.querySelector(
       ".plyr__controls__item.plyr__volume"
     ).style = "display: none";
   });
 });
+
+document
+  .querySelectorAll(".plyr__controls__item.plyr__volume")
+  .forEach((item1) => {
+    item1.addEventListener("mouseover", (e) => {
+      e.target.parentNode.parentNode.querySelector(
+        ".plyr__controls__item.plyr__volume"
+      ).style = "display: block";
+    });
+
+    item1.addEventListener("mouseout", (e) => {
+      e.target.parentNode.parentNode.querySelector(
+        ".plyr__controls__item.plyr__volume"
+      ).style = "display: none";
+    });
+  });

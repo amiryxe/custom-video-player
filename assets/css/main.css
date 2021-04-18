@@ -78,7 +78,7 @@
   padding-left: 10px;
 }
 .plyr__controls__item.plyr__volume .plyr--full-ui input[type=range] {
-  color: red;
+  background: red !important;
 }
 
 .plyr__tooltip {
@@ -120,11 +120,16 @@
   z-index: 2;
   margin-right: -15px;
   right: 100%;
-  top: 40%;
+  top: 34%;
 }
 
 .plyr__menu .plyr__control[aria-expanded=true] svg {
   transform: none !important;
+}
+
+input[data-plyr=volume] {
+  background: #202d3a !important;
+  height: 21px !important;
 }
 
 /*# sourceMappingURL=main.css.map */

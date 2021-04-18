@@ -91,7 +91,7 @@ $dark_color: rgb(32, 45, 58);
   padding-left: 10px;
 
   .plyr--full-ui input[type="range"] {
-    color: red;
+    background: red !important;
   }
 }
 
@@ -137,9 +137,14 @@ $dark_color: rgb(32, 45, 58);
   z-index: 2;
   margin-right: -15px;
   right: 100%;
-  top: 40%;
+  top: 34%;
 }
 
 .plyr__menu .plyr__control[aria-expanded="true"] svg {
   transform: none !important;
+}
+
+input[data-plyr="volume"] {
+  background: $dark_color !important;
+  height: 21px !important;
 }

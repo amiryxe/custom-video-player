@@ -39,3 +39,5 @@ const player = Plyr.setup(".player", {
   const list = document.querySelector(".plyr");
   list.appendChild(list.firstElementChild);
 })();
+
+renderPlayerIcons();

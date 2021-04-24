@@ -30,6 +30,7 @@ h5 {
 
 .wrapper {
   width: 1024px;
+  padding: 2rem 0;
 }
 
 .plyr--video {
